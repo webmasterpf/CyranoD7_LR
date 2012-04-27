@@ -1,0 +1,89 @@
+;Le nom du dossier du theme et le nom du fichier info doivent etre identiques.
+;Uniquement en minuscules et avec des underscores
+name = Thème CyranoD7 pour Le Rocher
+description = Theme PF pour Drupal 7.Inspired by Basic.
+screenshot = screenshot.png
+core = "7.x"
+;project = "PF"
+engine = phptemplate
+
+;regions[page_top] = Page top (D7)
+;regions[header] = Header (D7)
+regions[highlight] = Highlight (D7)
+regions[help] = Help (D7)
+regions[content] = Content (D7)
+;regions[sidebar_first] = First sidebar (D7)
+;regions[sidebar_second] = Second sidebar (D7)
+;regions[footer] = Footer (D7)
+;regions[page_bottom] = Page bottom
+;=== Regions customs depuis Starter ===
+regions[header] = Header
+regions[site_slogan] = Slogan du site (D6)
+regions[search_box] = Search box (D6)
+regions[menu_dyn] = Menu Header - Menu dynamique (D6)
+regions[navStatic] = Navigation par images - Bloc (D6)
+regions[DiapoHP] = Diaporama Homepage - Bloc (D6)
+regions[HPBasGauche] = Zone Bas Gauche HP - Bloc (D6)
+regions[HPBasDroit] = Zone Bas Droit HP - Bloc (D6)
+regions[content_top] = Content top (D6)
+regions[formulaire] = Zone formulaire bloc (D6)
+regions[left] = Colonne Gauche (D6)
+regions[decoTitre] = Titre deco image - Fiche Formations (D6)
+regions[right] = Colonne Droite (D6)
+regions[centralBloc] = Zone pour bloc central - View Bloc (D6)
+regions[content_bottom] = Content bottom (D6)
+regions[content_bottom_home] = Content bottom homepage (D6)
+regions[footer] = Footer (D6)
+
+;=== Region pour formulaire ===
+regions[formulaire] = Formulaire (centre) - Webform Bloc
+;=== Region pour slideshow ===
+regions[frontpageSlideshow] = Zone Frontpage Slideshow
+;=== Theming de node - inclusion de regions (via template.php) ===
+regions[Colonne_C1] = Colonne C1 - Theming de node
+regions[Colonne_C2] = Colonne C2 - Theming de node
+regions[Colonne_C3] = Colonne C3 - Theming de node
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+;stylesheets[all][] = css/default.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/layout-home.css
+stylesheets[all][] = css/global.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style-backoffice.css
+stylesheets[print][] = css/print.css
+stylesheets[print][] = css/reset.css
+; CSS pour utiliser NiceMenu
+;stylesheets[all][] = css/navigation/nice_menus_custom.css
+;stylesheets[all][] = css/navigation/nice_menu_down-horiz-children.css
+;stylesheets[all][] = css/navigation/nice_menus_default.css
+; CSS pour utiliser MegaMenu
+stylesheets[all][] = css/navigation/megamenu-skins.css
+; CSS pour utiliser OM MaxiMenu
+;stylesheets[all][] = css/navigation/om_maximenu/assopf-maximenu.css
+; CSS pour utiliser Superfish menu
+stylesheets[all][] = css/navigation/superfish/assopf-superfish.css
+stylesheets[all][] = css/navigation/superfish/superfish-navbar.css
+;stylesheets[all][] = css/navigation/superfish/blue.css
+;CSS Override pour le site : Galeries
+stylesheets[all][] = css/css_galeries/views_galleriffic_default.css
+stylesheets[all][] = css/css_galeries/views_showcase.css
+stylesheets[all][] = css/css_galeries/views_slideshow.css
+;CSS Slideshow Contenu Star
+stylesheets[all][] = css/css_galeries/slideshow-content-star.css
+
+settings[basic_tabs] = 1
+settings[basic_breadcrumb_separator] = »
+settings[wireframe_mode] = 0
+settings[clear_registry] = 0
+
+

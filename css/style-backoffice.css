@@ -1,0 +1,61 @@
+/*------------------------------------------------------*
+*-- CSS Drupal pour le backoffice --------------*
+*------------------------------------------------------*/
+
+/*------------------------------------------------*
+ *---  Provence Formation Janv. 2010 --*
+ *------------------------------------------------*/
+
+
+/*----Navigation backoffice------*/
+#block-system-navigation,#block-system-user-menu{
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+    padding: 5px;
+    margin: 5px;
+    border: #00AAD2 2px solid;
+}
+#block-system-navigation h2,#block-system-user-menu h2{color: #EB512F;}
+#block-system-navigation .content a,#block-system-user-menu .content a{
+    color:#EB512F;
+    text-decoration: none;
+    background: white;
+    padding: 0 2px;
+}
+#block-system-navigation a:hover,#block-system-user-menu a:hover{
+    background: #EB512F;
+    color: white;
+}
+#block-system-navigation{}
+.contextual-links-wrapper{}
+.contextual-links-wrapper a{
+    background: transparent;
+}
+.contextual-links-wrapper a:hover{}
+a.contextual-links-trigger{
+    background: transparent;
+}
+
+.item-list ul li {
+margin:0 0 0.25em 1.5em;
+padding:0;
+}
+
+.item-list ul{
+	margin: 0;
+	padding: 0;
+	
+}
+/*----page login------*/
+#user-login{
+margin: auto;
+width: 450px;
+padding:10px 0;
+}
+/*Workspace*/
+.sticky-table{
+    color: #606071;
+}
+
+.sticky-table a{
+    color: red;
+}
