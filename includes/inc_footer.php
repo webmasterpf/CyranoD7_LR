@@ -12,9 +12,10 @@
     </div> <!-- /footer -->
   <?php endif; ?>
   <div id="bloc_stats">
+      STATS DESACTIVEES !!!!
 <?php
-  global $theme_path;
-  include ($theme_path.'/js/code_stats.php');
+ // global $theme_path;
+  //include ($theme_path.'/js/code_stats.php');
   ?>
 </div>
     </div> <!-- /general OR /page -->

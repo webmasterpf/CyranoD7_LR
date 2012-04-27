@@ -1,4 +1,4 @@
-
+== CODE STATS INVALIDES !!!! A CHANGER ==
 <!--  ######## CODE STATS OK !!!!!!!!!!!!-->
 <!-- code XITI  -->
 <div id="xiti-logo" style="visibility: hidden;">

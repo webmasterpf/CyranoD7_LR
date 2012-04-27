@@ -8,19 +8,6 @@ Inclusion des polices en css3
     src: local("Arista"), url(../typos/Arista2.0_light.ttf) format('truetype');/* non-IE */
 }
 
-/*------- COULEURS DE BASE POUR CSS---------------∕∕
-rouge #E2001A
-rose #E2007A
-orange #F29400
-bleu #00AAD2
-vert #C8D215
-jaune #F8E91B
-violet #93117E
-gris clair #9C9E9F
-gris fonce #606171
-orange fonce logo #DE603A
-∕∕------- FIN COULEURS ---------------*/
-
 
 html {
  margin: 0;
@@ -62,7 +49,7 @@ ul,li,dl,dd,dt{
 
 /*Contenu de page  CONTENT */
 
-#contentPage, #contentPageActu, .page {
+#contentPage, #contentPageActu {
 	margin:0 auto;
 	padding:0;
 	width: 990px;
@@ -79,9 +66,6 @@ height: 100%;
 	height:auto;
 	background-color: red;
 	}
-#left-content{}
-#middle-content{}
-#right-content{}
 */
 /*/// debut des colonnes ///*/
 #left-content{
@@ -102,9 +86,9 @@ height: 100%;
 }
 /*inner content*/
 #content-inner{
-width: 990px;
+width:auto;
 margin:0 auto;
-float:none;
+float:left;
 background-color: white;
 
 }
@@ -113,8 +97,7 @@ background-color: white;
     	float:left;
 	position:relative;
 	background-color:transparent;
-	width:555px !important;
-        width: 545px;
+	width:755px;
 	padding:5px;
         margin: 0 auto;
         border-left: 1px solid #ACC624;
@@ -124,7 +107,7 @@ background-color: white;
 /*PIED DE CONTENU*/
 #content-bottom{
 background:transparent;
-width:990px;
+width:100%;
 margin: 0 auto;
 }
 
@@ -137,7 +120,7 @@ margin: 0 auto;
 	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
 	text-align: left;
 	color: #9898a6;
-        height:45px;
+        height:50px;
 }
 
 #footer a{
@@ -161,7 +144,15 @@ color: #000000;
     background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
    }
 
-   /*--------------------------------------------
+ #content-top-home{
+    margin:0 auto;
+    padding:5px;
+    width:970px;
+    height:70px;
+    background: white url(../images/fieldset_top.gif) repeat-x scroll left 65px;
+   }
+  
+     /*--------------------------------------------
 ---- LAYOUT POUR PAGE.TPL ET NODE.TPL OVERRIDE
 **********************************************
 -------------- GENERIQUE --------------------*/
@@ -190,6 +181,7 @@ color: #000000;
 }
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
+.col1_layout_225_735{width: 225px;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
 #colonne-2, #middle-content-override{
     padding: 5px;
@@ -201,6 +193,7 @@ color: #000000;
 }
 .col2_layout_330_all{}
 .col2_layout_18_56_25{}
+.col2_layout_225_735{width: 735px;}
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
 #colonne-3{
    padding: 3px;
@@ -221,7 +214,6 @@ color: #000000;
 .bleu-violet { border-left: 1px solid #00AAD2; border-right: 1px solid #93117E;}
 .vert-violet { border-left: 1px solid #C8D215; border-right: 1px solid #93117E;}
 /*//////////////// BORDER COLONNE 3 \\\\\\\\\\\\\\\\*/
-
   /*------------------------------------------------------*
   *------------ CSS H  ----*
   *------------------------------------------------------*/
@@ -229,7 +221,7 @@ color: #000000;
 h1 {
 	margin: 0;
 	padding: 5px 0;
-	color:#606070;
+	color:#93117E;
 	font-size: 24px;
         line-height:1em;
 }
@@ -256,7 +248,7 @@ h2.title a:hover{
 h3 {
 	margin: 0;
 	padding: 0;
-	color:#E3001B;
+	color:#000;
 	font-size: 16px;
 }
 h4 {
@@ -277,15 +269,7 @@ h6 {
 	color:#000;
 	font-size: 10px;
 }
-
-/*COULEUR DU H1 et autre titre*/
-.rouge {color: #E2001A;}
-.orange {color: #F29400;}
-.vert {color: #C8D215;}
-.bleu {color: #00AAD2;}
-.rose {color: #E2007A;}
-.violet {color: #93117E;}
-/*-----FIN LAYOUT DE BASE ET OPTIONS-----------*/
+/*-----FIN LAYOUT DE BASE-----------*/
 /***************************************/
 
 /* LAYOUT PAGE BASE 2 COLONNES*/
@@ -304,7 +288,7 @@ h6 {
         width: 710px ;
 	padding:5px;
         margin: 0 auto;
-        border-right: 1px solid #11B0D5;
+        border-right: 1px solid #93117E;
 }
 
 #right-content-base2col{
@@ -314,13 +298,225 @@ h6 {
 	width:235px;
 	right:0px;
 }
-/*---------------------------------------------------
-LAYOUT POUR NODE.TPL WEBFORM
----------------------------------------------------*/
-.colG1_webform{
-   
+/*----PAGE LYCEE-----*/
+#left-content-pageLycee{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:200px;
+	left:0px;
 }
-.colG2_webform{
-   
+#content-inner-pageLycee{
+width:570px;
+margin:0 auto;
+float:left;
+background-color: white;
+
 }
-.colG3_webform{}
+#middle-content-pageLycee{
+    	float:left;
+	position:relative;
+	background-color:transparent;
+	width:auto;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #606070;
+        border-right: 1px solid #E75130;
+ }
+ #right-content-pageLycee{
+	float:right;
+	position:relative;
+	background-color:transparent;
+	width:200px;
+	right:0px;
+}
+/*LAYOUT PAGE VIE DU LYCEE*/
+#left-content-vie-lycee{
+   float:left;
+   position:relative;
+   background-color:transparent;
+   width:250px;
+}
+#content-inner-vie-lycee{
+    	float:left;
+	position:relative;
+	background-color:transparent;
+	width: 700px;
+}
+#middle-content-vie-lycee{
+       	float:left;
+	position:relative;
+	background-color:transparent;
+	width: 700px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #ACC624;
+        border-right: 1px solid #11B0D5;
+}
+#right-content-vie-lycee{}
+/*LAYOUT SORTIE*/
+#left-content-sortie{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:225px;
+	left:0px;
+}
+
+#right-content-sortie{
+	float:right;
+	position:relative;
+	background-color:#FF66CC;
+	width:200px;
+	right:0px;
+}
+
+#content-inner-sortie{
+width:735px;
+margin:0 auto;
+float:left;
+background-color: white;
+
+}
+
+#middle-content-sortie{
+    	float:left;
+	position:relative;
+	background-color:transparent;
+	width:735px !important;
+        width: 735px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #93117E;
+        border-right: 1px solid #F09500;
+ }
+ /*LAYOUT FOYER*/
+#left-content-foyer{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:225px;
+	left:0px;
+}
+
+#right-content-foyer{
+	float:right;
+	position:relative;
+	background-color:#FF66CC;
+	width:200px;
+	right:0px;
+}
+
+#content-inner-foyer{
+width:735px;
+margin:0 auto;
+float:left;
+background-color: white;
+
+}
+
+#middle-content-foyer{
+    	float:left;
+	position:relative;
+	background-color:transparent;
+	width:735px !important;
+        width: 735px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #93117E;
+        border-right: 1px solid #F09500;
+ }
+  /*LAYOUT PROJET*/
+#left-content-projet{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:225px;
+	left:0px;
+}
+
+#right-content-projet{
+	float:right;
+	position:relative;
+	background-color:#FF66CC;
+	width:200px;
+	right:0px;
+}
+
+#content-inner-projet{
+width:735px;
+margin:0 auto;
+float:left;
+background-color: white;
+
+}
+
+#middle-content-projet{
+    	float:left;
+	position:relative;
+	background-color:transparent;
+	width:735px !important;
+        width: 735px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #93117E;
+        border-right: 1px solid #F09500;
+ }
+ /*LAYOUT FICHES FORMATIONS*/
+#left-content-fiche-formations{
+   float:left;
+   position:relative;
+   background-color:transparent;
+   width:305px;
+   padding:3px;
+}
+#content-inner-fiche-formations{
+    	float:left;
+	position:relative;
+	background-color:transparent;
+	width: auto;
+}
+#middle-content-fiche-formations{
+       	float:left;
+	position:relative;
+	background-color:transparent;
+	width: 590px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #E2017B;
+        border-right: 0px solid #F8E91B;
+}
+#right-content-fiche-formations{
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+/*LAYOUT PAGE CONTACT OU FORMULAIRE*/
+#left-content-contact{
+   float:left;
+   position:relative;
+   background-color:transparent;
+   width:250px;
+}
+#content-inner-contact{
+    	float:left;
+	position:relative;
+	background-color:transparent;
+	width: 700px;
+}
+#middle-content-contact{
+       	float:left;
+	position:relative;
+	background-color:transparent;
+	width: 700px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #ACC624;
+        border-right: 1px solid #F8E91B;
+}
+#right-content-contact{}
+
+/*lien sur logo PF*/
+.img_lien_pf{
+	border: 0;
+	}

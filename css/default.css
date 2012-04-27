@@ -72,6 +72,7 @@
  * This link useful for both visually impaired people and those with mobility impairments
  * who cannot use a mouse. http://www.webaim.org/techniques/css/invisiblecontent/ */
 /* line 59, ../sass/default.sass */
+#skip{display: none;}
 #skip a:link, #skip a:hover, #skip a:visited {
   position: absolute;
   left: -10000px;
@@ -79,6 +80,7 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+  
 }
 /* line 66, ../sass/default.sass */
 #skip a:active, #skip a:focus {

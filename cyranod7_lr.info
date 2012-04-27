@@ -17,24 +17,21 @@ regions[content] = Content (D7)
 ;regions[footer] = Footer (D7)
 ;regions[page_bottom] = Page bottom
 ;=== Regions customs depuis Starter ===
-regions[header] = Header
-regions[site_slogan] = Slogan du site (D6)
-regions[search_box] = Search box (D6)
+regions[header] = Header (D6)
 regions[menu_dyn] = Menu Header - Menu dynamique (D6)
 regions[navStatic] = Navigation par images - Bloc (D6)
 regions[DiapoHP] = Diaporama Homepage - Bloc (D6)
-regions[HPBasGauche] = Zone Bas Gauche HP - Bloc (D6)
-regions[HPBasDroit] = Zone Bas Droit HP - Bloc (D6)
+regions[PartieDroite1] = Zone Droite 1 HP - Bloc (D6)
+regions[PartieDroite2] = Zone Droite 2 HP - Bloc (D6)
+regions[PartieDroite3] = Zone Droite 3 HP - Bloc (D6)
 regions[content_top] = Content top (D6)
 regions[formulaire] = Zone formulaire bloc (D6)
 regions[left] = Colonne Gauche (D6)
-regions[decoTitre] = Titre deco image - Fiche Formations (D6)
 regions[right] = Colonne Droite (D6)
 regions[centralBloc] = Zone pour bloc central - View Bloc (D6)
 regions[content_bottom] = Content bottom (D6)
 regions[content_bottom_home] = Content bottom homepage (D6)
-regions[footer] = Footer (D6)
-
+regions[footer_block] = Footer (D6)
 ;=== Region pour formulaire ===
 regions[formulaire] = Formulaire (centre) - Webform Bloc
 ;=== Region pour slideshow ===
@@ -54,14 +51,16 @@ features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
 
-;stylesheets[all][] = css/default.css
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/layout-home-verticalG.css
 stylesheets[all][] = css/layout.css
-stylesheets[all][] = css/layout-home.css
 stylesheets[all][] = css/global.css
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/nice_menus_custom.css
+stylesheets[all][] = css/nice_menu_down-horiz-children.css
+stylesheets[all][] = css/nice_menus_default.css
 stylesheets[all][] = css/style-backoffice.css
-stylesheets[print][] = css/print.css
-stylesheets[print][] = css/reset.css
+stylesheets[all][] = css/search.css
+stylesheets[all][] = css/maintenance.css
 ; CSS pour utiliser NiceMenu
 ;stylesheets[all][] = css/navigation/nice_menus_custom.css
 ;stylesheets[all][] = css/navigation/nice_menu_down-horiz-children.css
@@ -81,9 +80,9 @@ stylesheets[all][] = css/css_galeries/views_slideshow.css
 ;CSS Slideshow Contenu Star
 stylesheets[all][] = css/css_galeries/slideshow-content-star.css
 
-settings[basic_tabs] = 1
-settings[basic_breadcrumb_separator] = »
-settings[wireframe_mode] = 0
-settings[clear_registry] = 0
-
+settings[basic_zen_tabs]             = 1
+settings[basic_wireframe]            = 0
+settings[basic_block_editing]        = 1
+settings[basic_rebuild_registry]     = 1
+scripts[] = js/general.js
 

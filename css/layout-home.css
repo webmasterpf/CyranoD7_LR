@@ -43,7 +43,7 @@ Template page d'accueil custom
 #navPicto{
 border:0;
 height:25px;
-width:575px;
+width:550px;
 
 }
 
@@ -53,11 +53,9 @@ height:25px;
 width:auto;
 display:block;
 float:left;
-padding:5px;
+padding:4px;
 }
-#navPicto tbody, #navPicto tbody{
-    border: 0;
-}
+
 #navPicto a {
 	border:0;
 	}
@@ -78,9 +76,6 @@ padding:5px;
 	height:auto;
 	padding:0;
 	width:990px;
-	
-	
-	
 }
 #headSearch{
 text-align:right;
@@ -89,18 +84,16 @@ background: url(../images/bg_recherche.gif) no-repeat left 5px;
 height: 25px;
 display: block;
 float: right;
- width: 225px;
 }
 #search{
- 
+  width: 225px;
   height: 25px;
   display: block;
   padding:0 3px 0 0;
 
 }
-input.custom-search-button form-submit{
-    margin: 0;
-    padding: 0;
+#search label{
+    display: none;
 }
 #name-and-slogan{
 	height:20px;
@@ -115,7 +108,7 @@ text-transform: uppercase;
 }
 
 #site-name{
-padding:80px 0 0 10px;
+padding:160px 0 0 10px;
 margin:0;
 }
 #site-slogan{
@@ -136,57 +129,108 @@ text-transform: uppercase;
 
 /*FIN CSS HEADER*/
 /*****************/
-#mainPage{
-	margin:auto;
-	width:990px;
-	clear:none;
-        background: url(../images/bg_content_etoile.gif) no-repeat left bottom;
-	
-}
-/********************/
-/*ZONES PAGE ACCUEIL*/
 #content-bottom-home a{
     color: gray;
     font-weight: bold;
 }
+#mainPage{
+	margin:auto;
+	width:990px;
+	clear:none;
+	
+}
+
 #HPDiapo{
-width: auto;
+width: 50%;
 height: auto;
 padding:10px 0 0;
-
-}
-/****************/
-#BasGaucheHP{
-        width:54%;
-        float:left;
-	background:none;
-	color:black;
+float: left;
 
 }
 
-#BasDroitHP{
-	width:46% !important;
-        width: 43%;
-	float:right;
-	background:none;
+#HPDroite{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    float:right;
 }
-#BasGaucheHP ul li{
-    list-style: square;
+
+#HPDroite1{
+    text-align: center;
 }
-#BasGaucheHP a,#BasDroitHP a{
-text-decoration:none;
+
+#HPDroite2{
+    background: url("../images/titre_actus_hp.gif") no-repeat top left;
+    margin: 0;
+    padding: 35px 2px 0;
 }
-#BasGaucheHP a:hover,#BasDroitHP a:hover{
-text-decoration:underline;
+
+#HPDroite3{
+    background: url("../images/titre_foyer_hp.gif") no-repeat top left;
+    margin: 0;
+    padding: 35px 2px 0;
+
 }
+
+#table_bienvenue_hp{
+    width: 360px;
+    margin: 0 auto;
+}
+/*-----------------------------------------
+LISTE ACTU
+-------------------------------------------*/
+#block-views-liste_activites_accueil-block_1 ul {
+list-style: none;
+}
+
+
+
+.view-liste-activites-accueil ul li{
+    list-style: none inside;
+    background: url("../images/puce-home.gif") no-repeat left 3px;
+    padding: 0;
+    margin: 0;
+}
+
+.view-liste-activites-accueil .titre a{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+p.view-liste-activites-accueil a{
+    text-decoration: none;
+}
+
+/*------------------------------------------
+BLOC POUR ACTU FOYER
+-------------------------------------------*/
+#block-views-liste_actu_foyer-block_1{
+    float: left;
+    width: 300px;
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+#block-views-liste_actu_foyer-block_1 a{
+    text-decoration: none;
+    color: #93117E;
+}
+#block-views-liste_actu_foyer-block_1 a:hover{
+    text-decoration: underline;
+    color: #E4007D;
+}
+#block-views-liste_actu_foyer-block_1 li, #block-views-liste_actu_foyer-block_1 h3{
+    color: #01AAD3;
+}
+
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE----*/
 #transparency{
-background:none repeat scroll 0 0 #E3001B;
-height:65px;
-bottom:5px;
-left:5px;
+background:none repeat scroll 0 0 #93117E;
+bottom:13px;
+height:115px;
+left:12px;
 position:absolute;
-width:968px;
+width:450px;
 z-index:15;
 opacity:0.6;
 -moz-opacity : 0.6;
@@ -211,10 +255,7 @@ color: white;
 text-decoration: none;
 }
 .view-diaporama-homepage{
-height:200px;
-margin:0 auto;
-position:inherit;
-width:978px;
+    position: inherit;
 }
 #views_slideshow_singleframe_main_diaporama_homepage-block_1{
     padding: 0;
@@ -222,22 +263,4 @@ width:978px;
 #views_slideshow_singleframe_teaser_section_diaporama_homepage-block_1{
     position: relative;
     z-index:1;
-}
-
-/*
------- Bloc RSS actu association
-*/
-#block-aggregator-feed-1 ul{
-    list-style-position: inside;
-}
-#block-aggregator-feed-1 ul li{
-    list-style-type: circle;
-}
-#block-aggregator-feed-1 a{
-    color: #4F4F4F;
-    text-decoration: none;
-}
-#block-aggregator-feed-1 a:hover{
-    color: #E2001A;
-    text-decoration: underline;
 }

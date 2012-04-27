@@ -1,6 +1,6 @@
 <?php
 // Form override fo theme settings : changer par le nom du theme custom
-function starter_pf_d7_form_system_theme_settings_alter(&$form, $form_state) {
+function cyranod7_lr_form_system_theme_settings_alter(&$form, $form_state) {
 
   $form['options_settings'] = array(
     '#type' => 'fieldset',
@@ -8,54 +8,54 @@ function starter_pf_d7_form_system_theme_settings_alter(&$form, $form_state) {
     '#collapsible' => FALSE,
     '#collapsed' => FALSE
   );
-  $form['options_settings']['starter_pf_d7_tabs'] = array(
+  $form['options_settings']['cyranod7_lr_tabs'] = array(
     '#type' => 'checkbox',
     '#title' =>  t('Use the ZEN tabs'),
     '#description'   => t('Check this if you wish to replace the default tabs by the ZEN tabs'),
-    '#default_value' => theme_get_setting('starter_pf_d7_tabs'),
+    '#default_value' => theme_get_setting('cyranod7_lr_tabs'),
   );
   
-  $form['options_settings']['starter_pf_d7_breadcrumb'] = array(
+  $form['options_settings']['cyranod7_lr_breadcrumb'] = array(
     '#type'          => 'fieldset',
     '#title'         => t('Breadcrumb settings'),
-    '#attributes'    => array('id' => 'starter_pf_d7-breadcrumb'),
+    '#attributes'    => array('id' => 'cyranod7_lr-breadcrumb'),
   );
-  $form['options_settings']['starter_pf_d7_breadcrumb']['starter_pf_d7_breadcrumb'] = array(
+  $form['options_settings']['cyranod7_lr_breadcrumb']['cyranod7_lr_breadcrumb'] = array(
     '#type'          => 'select',
     '#title'         => t('Display breadcrumb'),
-    '#default_value' => theme_get_setting('starter_pf_d7_breadcrumb'),
+    '#default_value' => theme_get_setting('cyranod7_lr_breadcrumb'),
     '#options'       => array(
                           'yes'   => t('Yes'),
                           'admin' => t('Only in admin section'),
                           'no'    => t('No'),
                         ),
   );
-  $form['options_settings']['starter_pf_d7_breadcrumb']['starter_pf_d7_breadcrumb_separator'] = array(
+  $form['options_settings']['cyranod7_lr_breadcrumb']['cyranod7_lr_breadcrumb_separator'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Breadcrumb separator'),
     '#description'   => t('Text only. Don’t forget to include spaces.'),
-    '#default_value' => theme_get_setting('starter_pf_d7_breadcrumb_separator'),
+    '#default_value' => theme_get_setting('cyranod7_lr_breadcrumb_separator'),
     '#size'          => 5,
     '#maxlength'     => 10,
-    '#prefix'        => '<div id="div-starter_pf_d7-breadcrumb-collapse">', // jquery hook to show/hide optional widgets
+    '#prefix'        => '<div id="div-cyranod7_lr-breadcrumb-collapse">', // jquery hook to show/hide optional widgets
   );
-  $form['options_settings']['starter_pf_d7_breadcrumb']['starter_pf_d7_breadcrumb_home'] = array(
+  $form['options_settings']['cyranod7_lr_breadcrumb']['cyranod7_lr_breadcrumb_home'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Show home page link in breadcrumb'),
-    '#default_value' => theme_get_setting('starter_pf_d7_breadcrumb_home'),
+    '#default_value' => theme_get_setting('cyranod7_lr_breadcrumb_home'),
   );
-  $form['options_settings']['starter_pf_d7_breadcrumb']['starter_pf_d7_breadcrumb_trailing'] = array(
+  $form['options_settings']['cyranod7_lr_breadcrumb']['cyranod7_lr_breadcrumb_trailing'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Append a separator to the end of the breadcrumb'),
-    '#default_value' => theme_get_setting('starter_pf_d7_breadcrumb_trailing'),
+    '#default_value' => theme_get_setting('cyranod7_lr_breadcrumb_trailing'),
     '#description'   => t('Useful when the breadcrumb is placed just before the title.'),
   );
-  $form['options_settings']['starter_pf_d7_breadcrumb']['starter_pf_d7_breadcrumb_title'] = array(
+  $form['options_settings']['cyranod7_lr_breadcrumb']['cyranod7_lr_breadcrumb_title'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Append the content title to the end of the breadcrumb'),
-    '#default_value' => theme_get_setting('starter_pf_d7_breadcrumb_title'),
+    '#default_value' => theme_get_setting('cyranod7_lr_breadcrumb_title'),
     '#description'   => t('Useful when the breadcrumb is not placed just before the title.'),
-    '#suffix'        => '</div>', // #div-starter_pf_d7-breadcrumb
+    '#suffix'        => '</div>', // #div-cyranod7_lr-breadcrumb
   );
   
   $form['options_settings']['wireframe_mode'] = array(
