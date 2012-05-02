@@ -8,7 +8,7 @@ include ($theme_path.'/includes/inc_header.php');
 	<div id="mainPage">
 	 
 
-          <?php if ($content_top_home): ?>
+          <?php if (!empty($content_top_home)): ?>
             <div id="content-top-home">
               <?php print $content_top_home; ?>
             </div> <!-- /#content-top -->
@@ -16,7 +16,7 @@ include ($theme_path.'/includes/inc_header.php');
 
    <!-- ______________________ ZONE DIAPO _______________________ -->
 			
-               <?php if ($page['DiapoHP']): ?>
+               <?php if (!empty($page['DiapoHP'])): ?>
 
                  <div id="HPDiapo">
                   <?php print render($page['DiapoHP']); ?>
@@ -28,15 +28,15 @@ include ($theme_path.'/includes/inc_header.php');
 <!-- ______________________ PARTIE DROITE _______________________ -->
       
 	<div id="HPDroite">
-	 <?php if ($page ['PartieDroite1']): ?>
+	 <?php if(!empty($page ['PartieDroite1'])): ?>
 	 <div id="HPDroite1"><?php print render ($page ['PartieDroite1']); ?></div>
 	 <?php endif; ?>
 	 
-	  <?php if ($page ['PartieDroite2']): ?>
+	  <?php if (!empty($page ['PartieDroite2'])): ?>
 	 <div id="HPDroite2"><?php print render ($page ['PartieDroite2']); ?></div>
 	 <?php endif; ?>
 	 
-	  <?php if ($page ['PartieDroite3']): ?>
+	  <?php if(!empty($page ['PartieDroite3'])): ?>
 	 <div id="HPDroite3"><?php print render ($page ['PartieDroite3']); ?></div>
 	 <?php endif; ?>
         
@@ -44,7 +44,7 @@ include ($theme_path.'/includes/inc_header.php');
    </div><!-- /Partie Droite -->
 	<br clear="all"/>
 		<!-- ______________________ CONTENU BAS _______________________ -->
-    <?php if ($page ['content_bottom_home']): ?>
+    <?php if(!empty($page ['content_bottom_home'])): ?>
     <div id="content-bottom-home">
       <?php print render ($page ['content_bottom_home']); ?>
          <?php print $feed_icons; ?>
@@ -52,7 +52,7 @@ include ($theme_path.'/includes/inc_header.php');
     <?php endif; ?>
     
 
-    <?php if ($page ['content_bottom']): ?>
+    <?php if(!empty($page ['content_bottom'])): ?>
             <div id="content-bottom">
               <?php print ($page ['content_bottom']); ?>
             </div><!-- /#content-bottom -->

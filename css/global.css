@@ -223,22 +223,22 @@ padding:10px 0;
 #middle-content a{}
 #middle-content a:hover{}
 /***** PAGE LYCEE ******/
-#middle-content-pageLycee a{
+#middle-content-pageLycee a,.pageLycee a{
     color: #93117E;
     text-decoration: none;
     padding: 2px;
 }
-#middle-content-pageLycee a:hover{
+#middle-content-pageLycee a:hover,.pageLycee a:hover{
     color: #EFEFEF;
     background:#93117E;
 
 }
-#middle-content-pageLycee h2{
+#middle-content-pageLycee h2,.pageLycee h2{
     color: #B6E026;
     padding: 2px;
     font-size: 16px;
 }
-#middle-content-pageLycee h3{
+#middle-content-pageLycee h3,.pageLycee h3{
     color: #93117E;
     padding: 2px;
     font-size: 14px;

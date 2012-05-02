@@ -21,8 +21,8 @@
 	       </div>
 
          <div id="menuImg">
-              <?php if (!empty($page ['navStatic'])): ?>
-		           <?php print render ($page ['navStatic']); ?>
+              <?php if (!empty($page['navStatic'])): ?>
+		           <?php print render ($page['navStatic']); ?>
 	          <?php endif; ?>
           </div>
 
@@ -37,8 +37,8 @@
 
 
             <div id="headSearch">
-		  <?php if (!empty($page ['search_box'])): ?>
-		  <?php print render ($page ['search_box']); ?>
+		  <?php if (!empty($page['search_box'])): ?>
+		  <?php print render ($page['search_box']); ?>
 		  <?php endif; ?>
 		  </div><!-- /recherche -->
 
@@ -46,19 +46,14 @@
           <div id="menuHead">
               
 
-	        <?php if (!empty($page ['menu_dyn'])): ?>
-			   <?php print render ($page ['menu_dyn']); ?>
+	        <?php if (!empty($page['menu_dyn'])): ?>
+			   <?php print render ($page['menu_dyn']); ?>
             <?php endif; ?>
 
           </div><!-- /menuHead -->
 
 
 		</div><!-- /headBas -->
-
-
-
-
-
 
 	  </div> <!-- /header-inner -->
         

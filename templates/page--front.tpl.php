@@ -6,60 +6,60 @@ include ($theme_path.'/includes/inc_header.php');
  <!-- ______________________ CONTENU _______________________ -->
     
 	<div id="mainPage">
-          <?php if ($page ['content_top']): ?>
-            <div id="content-top">
-              <?php print render ($page ['content_top']); ?>
+	 
+
+          <?php if (!empty($content_top_home)): ?>
+            <div id="content-top-home">
+              <?php print $content_top_home; ?>
             </div> <!-- /#content-top -->
           <?php endif; ?>
 
    <!-- ______________________ ZONE DIAPO _______________________ -->
 			
-              <?php if ($page['DiapoHP']): ?>
+               <?php if (!empty($page['DiapoHP'])): ?>
+
                  <div id="HPDiapo">
                   <?php print render($page['DiapoHP']); ?>
                  </div>
               <?php endif; ?>
-              
             
          
-<br clear="all"/>
-
-
-<!-- ______________________ PARTIE BAS GAUCHE _______________________ -->
-                 <?php if ($page ['HPBasGauche']): ?>
-                 <div id="BasGaucheHP"><?php print render ($page ['HPBasGauche']); ?></div>
-              <?php endif; ?>  
 		 
-<!-- ______________________ PARTIE BAS DROITE _______________________ -->
+<!-- ______________________ PARTIE DROITE _______________________ -->
       
-	  
+	<div id="HPDroite">
+	 <?php if(!empty($page ['PartieDroite1'])): ?>
+	 <div id="HPDroite1"><?php print render ($page ['PartieDroite1']); ?></div>
+	 <?php endif; ?>
 	 
-        <?php if ($page ['HPBasDroit']): ?>
-     <div id="BasDroitHP"><?php print render ($page ['HPBasDroit']); ?></div>
-        <?php endif; ?>
-		
-     
+	  <?php if (!empty($page ['PartieDroite2'])): ?>
+	 <div id="HPDroite2"><?php print render ($page ['PartieDroite2']); ?></div>
+	 <?php endif; ?>
+	 
+	  <?php if(!empty($page ['PartieDroite3'])): ?>
+	 <div id="HPDroite3"><?php print render ($page ['PartieDroite3']); ?></div>
+	 <?php endif; ?>
+        
 	  
-   
+   </div><!-- /Partie Droite -->
 	<br clear="all"/>
-	<!-- ______________________ CONTENU BAS _______________________ -->
-    <?php if ($page ['content_bottom_home']): ?>
+		<!-- ______________________ CONTENU BAS _______________________ -->
+    <?php if(!empty($page ['content_bottom_home'])): ?>
     <div id="content-bottom-home">
       <?php print render ($page ['content_bottom_home']); ?>
          <?php print $feed_icons; ?>
     </div><!-- /#content-bottom -->
     <?php endif; ?>
     
-    <?php if ($page ['content_bottom']): ?>
+
+    <?php if(!empty($page ['content_bottom'])): ?>
             <div id="content-bottom">
               <?php print ($page ['content_bottom']); ?>
             </div><!-- /#content-bottom -->
+
           <?php endif; ?>
-	
-	
-	 </div> <!-- /mainPage -->
+ </div> <!-- /mainPage -->
      <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_footer.php');
 ?>
- 
