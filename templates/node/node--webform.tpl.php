@@ -41,7 +41,7 @@
     <?php  print $node->field_image_deco_lycee[0]['view'] /*Image deco page lycee*/ ?>
 
 <?php //region colonne C1
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C1.php');
 ?>
 
@@ -66,7 +66,7 @@ include ($theme_path.'/includes/inc_region_col_C1.php');
   </div>
 
                <?php //region colonne C2
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C2.php');
 ?>
 
@@ -96,13 +96,13 @@ include ($theme_path.'/includes/inc_region_col_C2.php');
            <?php endif;?>
     </div>
            <?php //inclusion d'une vue via php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_vue_generik_tpl.php');
 ?>
 
 
            <?php //region colonne C3
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C3.php');
 ?>
 

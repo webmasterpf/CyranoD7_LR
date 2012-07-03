@@ -1,5 +1,5 @@
 <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_header.php');
 ?>
 <!-- ______________________ LAYOUT HOMEPAGE _______________________ -->
@@ -60,6 +60,6 @@ include ($theme_path.'/includes/inc_header.php');
           <?php endif; ?>
  </div> <!-- /mainPage -->
      <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_footer.php');
 ?>

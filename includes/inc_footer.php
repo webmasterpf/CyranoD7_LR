@@ -14,7 +14,7 @@
   <div id="bloc_stats">
       STATS DESACTIVEES !!!!
 <?php
- // global $theme_path;
+ // $theme_path = drupal_get_path('theme', 'cyranod7_lr');
   //include ($theme_path.'/js/code_stats.php');
   ?>
 </div>

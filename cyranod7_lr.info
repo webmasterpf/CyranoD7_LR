@@ -1,6 +1,6 @@
 ;Le nom du dossier du theme et le nom du fichier info doivent etre identiques.
 ;Uniquement en minuscules et avec des underscores
-name = Thème CyranoD7 pour Le Rocher
+name = CyranoD7 Le Rocher
 description = Theme PF pour Drupal 7.Inspired by Basic.
 screenshot = screenshot.png
 core = "7.x"
@@ -14,7 +14,7 @@ regions[help] = Help (D7)
 regions[content] = Content (D7)
 ;regions[sidebar_first] = First sidebar (D7)
 ;regions[sidebar_second] = Second sidebar (D7)
-;regions[footer] = Footer (D7)
+regions[footer] = Footer (D7)
 ;regions[page_bottom] = Page bottom
 ;=== Regions customs depuis Starter ===
 regions[header] = Header (D6)
@@ -70,7 +70,7 @@ stylesheets[all][] = css/navigation/megamenu-skins.css
 ; CSS pour utiliser OM MaxiMenu
 ;stylesheets[all][] = css/navigation/om_maximenu/assopf-maximenu.css
 ; CSS pour utiliser Superfish menu
-stylesheets[all][] = css/navigation/superfish/assopf-superfish.css
+stylesheets[all][] = css/navigation/superfish/lerocher-superfish.css
 stylesheets[all][] = css/navigation/superfish/superfish-navbar.css
 ;stylesheets[all][] = css/navigation/superfish/blue.css
 ;CSS Override pour le site : Galeries

@@ -32,7 +32,7 @@
 
 
 	 <?php //region colonne C1
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C1.php');
 ?>
           </div>
@@ -86,7 +86,7 @@ print render($content['taxonomy_vocabulary_1']);
 
 
             <?php //region colonne C3
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C3.php');
 ?>
 

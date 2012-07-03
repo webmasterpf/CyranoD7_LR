@@ -1,5 +1,5 @@
 <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_header.php');
 ?>
  <!-- ______________________ LAYOUT PAGE  SORTIES _______________________ -->
@@ -91,7 +91,7 @@ include ($theme_path.'/includes/inc_header.php');
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
 <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_footer.php');
 ?>     
           <?php endif; ?>

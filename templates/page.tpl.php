@@ -1,5 +1,5 @@
 <?php
-  global $theme_path;
+  $theme_path = drupal_get_path('theme', 'cyranod7_lr');
   include ($theme_path.'/includes/inc_header.php');
   ?>
 
@@ -87,7 +87,7 @@
 
   </div> <!-- /main -->
      <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_footer.php');
 ?>
  

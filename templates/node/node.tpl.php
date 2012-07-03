@@ -27,7 +27,7 @@
                 <h1 class="title bleu"><?php print $title; ?></h1>
               <?php endif; ?>
 	 <?php //region colonne C1
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C1.php');
 ?>
           </div>
@@ -59,7 +59,7 @@ print render($content['field_EXAMPLE']);
 ?>
 
            <?php //region colonne C2
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C2.php');
 ?>
 
@@ -75,7 +75,7 @@ include ($theme_path.'/includes/inc_region_col_C2.php');
        
            <div id="colonne-3" class="CHOIX_DU_LAYOUT">
             <?php //region colonne C3
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyranod7_lr');
 include ($theme_path.'/includes/inc_region_col_C3.php');
 ?>
         </div>
