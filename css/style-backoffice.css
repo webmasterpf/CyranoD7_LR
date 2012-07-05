@@ -8,20 +8,20 @@
 
 
 /*----Navigation backoffice------*/
-#block-system-navigation,#block-system-user-menu{
+#block-system-navigation,#block-system-user-menu,#block-system-management{
     background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
     padding: 5px;
     margin: 5px;
     border: #00AAD2 2px solid;
 }
-#block-system-navigation h2,#block-system-user-menu h2{color: #EB512F;}
-#block-system-navigation .content a,#block-system-user-menu .content a{
+#block-system-navigation h2,#block-system-user-menu h2,#block-system-management h2{color: #EB512F;}
+#block-system-navigation .content a,#block-system-user-menu .content a,#block-system-management a{
     color:#EB512F;
     text-decoration: none;
     background: white;
     padding: 0 2px;
 }
-#block-system-navigation a:hover,#block-system-user-menu a:hover{
+#block-system-navigation a:hover,#block-system-user-menu a:hover,#block-system-management a:hover{
     background: #EB512F;
     color: white;
 }

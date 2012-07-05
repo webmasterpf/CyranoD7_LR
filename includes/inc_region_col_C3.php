@@ -13,4 +13,4 @@ if (block_get_blocks_by_region('Colonne_C3')): ?>
     <?php endif; ?>
 <br clear="all"/>
 
-<p>LA REGION EXISTE colonne c3</p>
+

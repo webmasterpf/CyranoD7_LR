@@ -6,7 +6,8 @@
 
 ?>
 <!-- ______________________ FOOTER _______________________ -->
-<?php if(!empty($page['footer'])): ?>
+<br clear="all"/>
+    <?php if(!empty($page['footer'])): ?>
     <div id="footer">
       <?php print render($page['footer']); ?>
     </div> <!-- /footer -->

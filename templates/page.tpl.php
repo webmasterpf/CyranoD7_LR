@@ -3,7 +3,7 @@
   include ($theme_path.'/includes/inc_header.php');
   ?>
 
-  <!-- ______________________ LAYOUT PAGE BASIQUE _______________________ -->
+  <!-- ______________________ LAYOUT PAGE BASIQUE PAGE.TPL _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
 
    <div id="contentPage" class="clearfix">
@@ -12,7 +12,9 @@
               <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb || ($page ['content_top']) ): ?>
             <div id="content-top">
-	<span id="ariane"> <?php print $breadcrumb; ?></span>
+	<span id="ariane"> 
+            <?php $breadcrumb = theme('breadcrumb', array('breadcrumb' => drupal_get_breadcrumb()));
+             print $breadcrumb; ?></span>
 
               <?php print render ($page ['content_top']); ?>
             </div>
@@ -81,6 +83,7 @@
         <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary', 'class' => array('links', 'clearfix', 'sub-menu')))); ?>
       </div>
     <?php endif; ?>
+                
             </div><!-- /#content-bottom -->
         
 

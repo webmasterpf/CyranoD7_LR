@@ -12,4 +12,3 @@ if (block_get_blocks_by_region('Colonne_C1')): ?>
 </div>
     <?php endif; ?>
 <br clear="all"/>
-<p>LA REGION EXISTE colonne C1</p>

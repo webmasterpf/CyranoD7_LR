@@ -1,4 +1,4 @@
-<!--_____________  NODE.TPL BASIQUE _____________________ -->
+<!--_____________  NODE.TPL BASIQUE PAGE.TPL _____________________ -->
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
 	<div class="node-inner">
    

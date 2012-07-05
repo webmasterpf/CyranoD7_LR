@@ -330,40 +330,7 @@ padding:10px 0;
 #block-aggregator-feed-1 ul li a:hover{
    color: #E2017B;
 }
-/*STYLE PAGE FORMATIONS INITIALES ARBRE*/
-#table-offre-formation, #table-offre-formation tbody{
-    width: 952px !important;
-    height: 669px !important;
-    border: 0;
-    border-collapse:collapse;
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-   /* vertical-align: bottom;*/
-}
 
-#table-offre-formation tr{
-    width: 952px;
-    height: auto;
-    border: 0;
-     line-height: 0;
-     margin: 0;
-    padding: 0;
-}
-#table-offre-formation td{
-    width: auto;
-    height: auto;
-    border: 0;
-     line-height: 0;
-     margin: 0;
-    padding: 0;
-}
-#table-offre-formation img{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    line-height: 0;
-}
 /*FICHE FORMATION NODE.TPL*/
 .complement_titre_fiche h3{
     font-size: 14px;
@@ -386,21 +353,49 @@ padding:10px 0;
     color: #ADC821;
     background: #93117E;
 }
-#content-inner-fiche-formations h2{
+#middle-content-fiche-formations h2{
     font-size: 16px;
     color: #93117E;
     padding: 3px;
 }
-#content-inner-fiche-formations h3{
+#middle-content-fiche-formations h3{
     font-size: 14px;
     color: #ADC821;
     padding: 2px;
 }
-#content-inner-fiche-formations ul li{
+#middle-content-fiche-formations ul li{
     padding: 2px;
     list-style: square inside none;
     line-height: 1;
 }
+#middle-content-fiche-formations p{line-height: 1.3em;padding: 3px;}
+#diapo-ficheform{margin: 5px;}
+
+/*-----------------------------------
+------- Pole Metiers 2012 ------------
+*************************************/
+.pole-metiers{}
+.pole-metiers h1{text-align: center;}
+.pole-metiers{}
+.pole-metiers{}
+.pole-metiers{}
+.bloc-pole a{text-align: center;}
+.bloc-pole{width: 240px;float: left;margin: 0 3px;}
+.bloc-pole a{color: #93117E;text-decoration: none;}
+.bloc-pole a:hover{text-decoration: underline;}
+.bloc-pole h3{text-align: center;margin:0 0 5px 0;}
+
+#orientation table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
+#restauration table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
+#service table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
+#industrie table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
+
+#orientation h3{color: #2874A2;}
+#service h3{color: #01AAD3;}
+#restauration h3{color: #ADC91F;}
+#industrie h3{color: #E1017B;}
+#orientation tr,#service tr,#restauration tr,#industrie tr{margin: 2px 0;}
+#orientation td,#service td,#restauration td,#industrie td{padding: 10px 5px;display: block;}
 /*-----------------------------------
 ------- PAGE PROJET -----------------
 *************************************/
