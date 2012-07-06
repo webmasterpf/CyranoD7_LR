@@ -3,6 +3,7 @@
 name = CyranoD7 Le Rocher
 description = Theme PF pour Drupal 7.Inspired by Basic.
 screenshot = screenshot.png
+version = VERSION
 core = "7.x"
 ;project = "PF"
 engine = phptemplate

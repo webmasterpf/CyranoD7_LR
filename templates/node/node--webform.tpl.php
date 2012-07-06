@@ -82,24 +82,7 @@ include ($theme_path.'/includes/inc_region_col_C2.php');
 <!--______________COLONNE GAUCHE 3________________ -->
 
 <div id="colonne-3" class="colG3_webform col3_layout_200_570_200">
-     <?php print $picture; ?>
-
-
-
-    <div class="content">
-
-        <br clear="all"/>
-           <?php if ($content['field_vue_actus_lycee']): ?>
-        <div id="bloc-actu-lycee">
-           <?php  print render($content['field_vue_actus_lycee']); /*Vue actus du lycée*/ ?>
-        </div>
-           <?php endif;?>
-    </div>
-           <?php //inclusion d'une vue via php
-$theme_path = drupal_get_path('theme', 'cyranod7_lr');
-include ($theme_path.'/includes/inc_vue_generik_tpl.php');
-?>
-
+   
 
            <?php //region colonne C3
 $theme_path = drupal_get_path('theme', 'cyranod7_lr');
@@ -107,9 +90,6 @@ include ($theme_path.'/includes/inc_region_col_C3.php');
 ?>
 
 
-    <?php if ($terms): ?>
-      <div class="taxonomy"><?php //print $terms; ?></div>
-    <?php endif;?>
 
    
 

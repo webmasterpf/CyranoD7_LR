@@ -23,9 +23,6 @@ body {
 	background-color: white;
 	color: gray;
 }
-ul,li,dl,dd,dt{
-    list-style-position: inside;
-}
  /*------------------------------------------------------*
   *--------    CSS BLOCS     						 ----*
   *------------------------------------------------------*/
@@ -182,18 +179,18 @@ color: #000000;
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
 .col1_layout_225_735{width: 225px;}
+.col1_layout_250_700{width: 250px; float: left;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
 #colonne-2, #middle-content-override{
     padding: 5px;
 
 }
-.col2_layout_200_570_200{
-    width: 570px;
-    float: left;
+.col2_layout_200_570_200{width: 570px;float: left;
 }
 .col2_layout_330_all{}
 .col2_layout_18_56_25{}
 .col2_layout_225_735{width: 735px;}
+.col2_layout_250_700{width: 700px; float: left;}
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
 #colonne-3{
    padding: 3px;
@@ -272,35 +269,15 @@ h6 {
 	color:#000;
 	font-size: 10px;
 }
+/*_______ ELEMENTS _____________*/
+ul,li,dl,dd,dt{list-style-position: inside;}
+p{padding: 2px;margin: 0;line-height: 1.3em;}
+ul{width: 95%;margin: 3px auto;}
+li{margin: 5px 0;}
 /*-----FIN LAYOUT DE BASE-----------*/
 /***************************************/
 
-/* LAYOUT PAGE BASE 2 COLONNES*/
-#content-inner-base2col{
-    width:710px;
-    margin:0 auto;
-    float:left;
-    background-color: white;
-}
 
-#middle-content-base2col{
-    	float:left;
-	position:relative;
-	background-color:transparent;
-	width:710px !important;
-        width: 710px ;
-	padding:5px;
-        margin: 0 auto;
-        border-right: 1px solid #93117E;
-}
-
-#right-content-base2col{
-        float:right;
-	position:relative;
-	background-color:transparent;
-	width:235px;
-	right:0px;
-}
 /*----PAGE LYCEE-----*/
 #left-content-pageLycee{
 	float:left;
@@ -519,7 +496,3 @@ background-color: white;
 }
 #right-content-contact{}
 
-/*lien sur logo PF*/
-.img_lien_pf{
-	border: 0;
-	}

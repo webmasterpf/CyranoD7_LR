@@ -6,7 +6,24 @@ include ($theme_path.'/includes/inc_header.php');
  <!-- ______________________ CONTENU _______________________ -->
     
 	<div id="mainPage">
-	 
+	    <!-- _____ CONTENT HEADER ____ -->  
+            <?php if ($messages || $tabs || $action_links): ?>
+          <div id="content-header">
+
+          
+
+            <?php if ($page['highlight']): ?>
+              <div id="highlight"><?php print render($page['highlight']) ?></div>
+            <?php endif; ?>
+
+          
+
+            <?php print $messages; ?>
+            <?php print render($page['help']); ?>
+            <?php print render($tabs); ?>
+
+          </div> <!-- /#content-header -->
+        <?php endif; ?>
 
           <?php if (!empty($content_top_home)): ?>
             <div id="content-top-home">

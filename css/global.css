@@ -22,10 +22,6 @@ a#retour_haut{
 a:hover#retour_haut{
     text-decoration: underline;
 }
-p{
-    padding: 2px 0;
-    margin: 0;
-}
 
 /*TABLES STYLES DIVERS*/
 .table_generik{
@@ -67,19 +63,6 @@ text-align:left;
 }
 li.node_read_more a:hover{
 text-decoration: underline;
-}
-/********JWRotator*******/
-.field-field-rotator{
-margin: auto;
-padding: 2px;
-border: 1px solid #000;
-width:400px;
-}
-
-/***placement miniatures lightbox2**/
-a.lightbox-processed img {
-padding: 2px;
-margin:0;
 }
 /****------formulaire contact/////////*/
 #contact-mail-page{
@@ -243,6 +226,11 @@ padding:10px 0;
     padding: 2px;
     font-size: 14px;
 }
+.pageLycee img{margin: 0 auto;display: block;}
+.pageLycee h2,.pageLycee h4{text-align: center;}
+/*lien sur logo PF*/
+.img_lien_pf{border: 0;	}
+a.img_lien_pf :hover{}
 /*PAGES ACTIVITE VIE DU LYCEE*/
 .item-list-activites{
     margin: 0;
@@ -274,6 +262,7 @@ padding:10px 0;
     font-weight: bold;
     text-transform: capitalize;
     color: #AEC81F;
+    line-height: 1.5em;
 }
 .view-liste-activites-lycee a.field-content{
     color: red;
@@ -283,7 +272,7 @@ padding:10px 0;
         VUE BLOC VDL ARCHIVES FILTRE EXPOSE
 ---------------------------------------------*/
 #vue-bloc-vdl-archives{
-    width: 99%;
+    width: 80%;
     margin: 0 auto;
 }
 #vue-bloc-vdl-archives table{
@@ -307,7 +296,12 @@ padding:10px 0;
 #vue-bloc-vdl-archives td a:hover{
     color: black;
 }
-#vue-bloc-vdl-archives{}
+/*Commun page VDL avec vue archive inclus*/
+.liste-archive .views-exposed-form{width: 350px;display: block;margin: 3px auto;}
+.liste-archive .views-exposed-widget{float: left;}
+.liste-archive .views-exposed-form{width: 350px;display: block;margin: 3px auto;}
+.liste-archive .pager{}
+.liste-archive .pager li a{color: #93117E;}
 /*--------*/
 /* FLUX BLOC ACTU ASSO*/
 #block-aggregator-feed-1 {
@@ -381,16 +375,16 @@ padding:10px 0;
 .pole-metiers{}
 .bloc-pole a{text-align: center;}
 .bloc-pole{width: 240px;float: left;margin: 0 3px;}
-.bloc-pole a{color: #93117E;text-decoration: none;}
-.bloc-pole a:hover{text-decoration: underline;}
+.bloc-pole a{color: #93117E;text-decoration: none;line-height: 1.6em;padding: 1px;text-align: center;display: block;}
+.bloc-pole a:hover{background: #ADC821;}
 .bloc-pole h3{text-align: center;margin:0 0 5px 0;}
 
-#orientation table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
-#restauration table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
-#service table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
-#industrie table{width:235px;background: #11B0D5;border:3px solid #D0D1D2;padding: 3px;}
+#orientation table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;}
+#restauration table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;}
+#service table{width:235px;background: #EFEFEF;border:3px solid #01AAD3;padding: 3px;}
+#industrie table{width:235px;background: #EFEFEF;border:3px solid #E1017B;padding: 3px;}
 
-#orientation h3{color: #2874A2;}
+#orientation h3{color: #F39300;}
 #service h3{color: #01AAD3;}
 #restauration h3{color: #ADC91F;}
 #industrie h3{color: #E1017B;}
