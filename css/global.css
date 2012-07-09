@@ -76,21 +76,10 @@ padding: 0;
 padding: 5px;
 }
 /**style du fil d'ariane**/
-.breadcrumb {
-color:#d63e2a;
-text-decoration:none;
-}
-##ariane{
-    display: block;
-    width: auto;
-background: white;
-}
+.breadcrumb {color:#d63e2a;text-decoration:none;width: auto;}
+#ariane{display: block; width: auto;background: transparent;}
 
-.breadcrumb a{
-color:#4e4d5e;
-text-decoration:none;
-background: white;
-}
+.breadcrumb a{color:#4e4d5e;text-decoration:none;background: white;padding: 0 5px;}
 .breadcrumb a:hover{
 color:#000;
 text-decoration:underline;
@@ -230,7 +219,8 @@ padding:10px 0;
 .pageLycee h2,.pageLycee h4{text-align: center;}
 /*lien sur logo PF*/
 .img_lien_pf{border: 0;	}
-a.img_lien_pf :hover{}
+a:hover.img_lien_pf{background: none;}
+
 /*PAGES ACTIVITE VIE DU LYCEE*/
 .item-list-activites{
     margin: 0;
@@ -302,7 +292,26 @@ a.img_lien_pf :hover{}
 .liste-archive .views-exposed-form{width: 350px;display: block;margin: 3px auto;}
 .liste-archive .pager{}
 .liste-archive .pager li a{color: #93117E;}
+.liste-archive table{width: 98%;margin: 5px auto;}
+.liste-archive td{margin: 3px auto;background: #EFEFEF;padding: 5px;}
+.liste-archive h3{color: #93117E;text-align: center;margin: 5px 0;}
+.liste-archive .views-field-created{text-align: right;font-style: italic;}
 /*--------*/
+/*----------------------------
+____ COMMUN VDL STYLE _______*/
+.contentVDL{}
+.contentVDL p{padding: 3px;}
+.contentVDL a{color: #93117E;font-weight: bold;text-decoration: none;}
+.contentVDL a:hover{text-decoration: underline;}
+.contentVDL ul{}
+
+.vdl-galerie{}
+/*Gallery Formatter*/
+.vdl-galerie .overlay-inner h3{color: #DFDFDF;}
+/*LB Like*/
+.vdl-galerie table{}
+.vdl-galerie tr{}
+.vdl-galerie td img{margin: 5px;border: 1px solid #93117E;}
 /* FLUX BLOC ACTU ASSO*/
 #block-aggregator-feed-1 {
     margin: 5px 0;
@@ -332,12 +341,14 @@ a.img_lien_pf :hover{}
     text-align: right;
 }
 #diapo_fiche{
-    width: 300px;
-    margin: 5px 0;
+    width: 220px;
+margin: 5px auto;
     padding: 0;
     display: block;
 }
-#programme{}
+#diapo_fiche img{border: 2px solid #93117E;}
+#programme{margin: 20px 0;}
+#programme .file{margin: 3px;}
 #programme a{
     text-decoration: none;
     color: #93117E;
@@ -347,22 +358,25 @@ a.img_lien_pf :hover{}
     color: #ADC821;
     background: #93117E;
 }
-#middle-content-fiche-formations h2{
+.ficheform p{padding: 2px;}
+.ficheform a{color: #93117E;text-decoration: none;}
+.ficheform a:hover{text-decoration: underline;}
+.ficheform h2{
     font-size: 16px;
     color: #93117E;
     padding: 3px;
 }
-#middle-content-fiche-formations h3{
+.ficheform h3{
     font-size: 14px;
     color: #ADC821;
     padding: 2px;
 }
-#middle-content-fiche-formations ul li{
+.ficheform ul li{
     padding: 2px;
     list-style: square inside none;
     line-height: 1;
 }
-#middle-content-fiche-formations p{line-height: 1.3em;padding: 3px;}
+.ficheform p{line-height: 1.3em;padding: 3px;}
 #diapo-ficheform{margin: 5px;}
 
 /*-----------------------------------
@@ -400,3 +414,15 @@ a.img_lien_pf :hover{}
 #middle-content-projet a:hover{
     text-decoration: underline;
 }
+/*-----------------------------
+_________ RECHERCHE __________*/
+.search-results h3 a{color: #ADC821;}
+.search-results h3 a:hover{color:#93117E;}
+.search-results ol{}
+.search-results li{}
+.search-results{}
+
+/*-----------------------------
+________ ERREUR _____________*/
+.contentErreur{}
+.contentErreur h2{color: #E1017B;}

@@ -1,5 +1,5 @@
 <!--_____________ /////////\\\\\\\\\\\_____________________ -->
-<!--_____________  NODE.TPL PAGE VIE DU LYCEE CUSTOM _____________________ -->
+<!--_____________  NODE.TPL PAGE SEARCH CUSTOM _____________________ -->
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
 	<div class="node-inner">
   
@@ -24,10 +24,8 @@
    * violet
          */?>
               <!-- ______________________ COLONNE C1 _______________________ -->
-        <div id="colonne-1" class="col1_layout_250_700">
-            <?php  print render($title_prefix); ?>
-         <?php if ($title): ?><h1 class="title rouge"><?php print $title; ?></h1><?php endif; ?>
-            <?php print render($title_suffix); ?>
+        <div id="colonne-1" class="col1_layout_225_735">
+           <h1><?php print t('Search results');?></h1>
 
 
 	 <?php //region colonne C1
@@ -47,36 +45,21 @@ include ($theme_path.'/includes/inc_region_col_C1.php');
       <span class="submitted"><?php print $date; ?> — <?php print $name; ?></span>
     <?php endif; ?>
 <!-- ______________________ COLONNE C2 _______________________ -->
- <div id="colonne-2" class="col2_layout_250_700 rouge-bleu">
-  	  <?php 
-  	    // We hide the comments and links now so that we can render them later.
-        hide($content['comments']);
-        hide($content['links']);
-        print render($content['body']);
-       ?>
+ <div id="colonne-2" class="col2_layout_225_735 search-results">
+  	  <?php if ($search_results) : ?>
+  
+  <ol class="search-results <?php print $module; ?>-results">
+    <?php print $search_results; ?>
+  </ol>
+  <?php print $pager; ?>
+<?php else : ?>
+  <h2><?php print t('Your search yielded no results');?></h2>
+  <?php print search_help('search#noresults', drupal_help_arg()); ?>
+<?php endif; ?>
+
   	
- <?php /*Champ conditionnel*/ if (!empty($content['field_vue_content'])): ?>
-  <div class="liste-archive">
-     <?php  print render($content['field_vue_content']);?>
-       <?php print render($title_suffix); ?>
-  </div>
- <?php endif; ?>
-             <?php
-/* inclusion des termes de taxonomie associés
- * Nouveau dans  D7 - choisir si affiche nom du vocabulaire ou pas
- */
-print render($content['taxonomy_vocabulary_1']);
-?>
-  	
-    <?php if (!empty($content['links']['terms'])): ?>
-      <div class="terms"><?php print render($content['links']['terms']); ?></div>
-    <?php endif;?>
-  	
-    <?php if (!empty($content['links'])): ?>
-	    <div class="links"><?php print render($content['links']); ?></div>
-	  <?php endif; ?>
-</div> <!-- /colonne 2 -->
-       
+
+
          
         
 	</div> <!-- /node-inner -->

@@ -35,7 +35,7 @@ include ($theme_path.'/includes/inc_diapo_ficheform.php');
 
             <!-- ____________LAYOUT NODE FICHE FORMATION____-->
              <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-fiche-formations">
+          <div id="middle-content-fiche-formations" class="ficheform">
           
 
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">

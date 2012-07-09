@@ -1,5 +1,5 @@
 <!--_____________ /////////\\\\\\\\\\\_____________________ -->
-<!--_____________  NODE.TPL PAGE PROJETS CUSTOM _____________________ -->
+<!--_____________  NODE.TPL PAGE SORTIE CUSTOM _____________________ -->
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
 	<div class="node-inner">
   
@@ -29,9 +29,9 @@
          <?php if ($title): ?><h1 class="title rouge"><?php print $title; ?></h1><?php endif; ?>
             <?php print render($title_suffix); ?>
 
- <?php  if (!empty($content['field_fichier_joint'])): ?>
+ <?php  if (!empty($content['field_fichier_joint_sortie'])): ?>
   <div class="vdl-fichier-joint">
-     <?php  print render($content['field_fichier_joint']);?>
+     <?php  print render($content['field_fichier_joint_sortie']);?>
   </div>
  <?php endif; ?>
          
@@ -61,7 +61,12 @@ include ($theme_path.'/includes/inc_region_col_C1.php');
        ?>
   
   
-  
+ <?php  if (!empty($content['field_choix_galerie_vdl'])): ?>
+  <div class="vdl-galerie">
+     <?php  print render($content['field_choix_galerie_vdl']);?>
+  </div>
+ <?php endif; ?>
+ 
 
  <?php  if (!empty($content['field_video_externe'])): ?>
   <div class="vdl-video">
@@ -93,3 +98,4 @@ include ($theme_path.'/includes/inc_vue_generik_tpl.php');
 </div> <!-- /node-->
 
 <?php print render($content['comments']); ?>
+<!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->

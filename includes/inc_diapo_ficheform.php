@@ -19,6 +19,7 @@ $viewname_dff1 = 'diapo_ficheform';/*Nom de la vue en Minuscules !! Copier depui
 $view = views_get_view ($viewname_dff1);
 $viewdisplay_dff1 = $view->set_display('block_1');
 $args_dff1 = $view->set_arguments(array($node->nid));
+$view->hide_admin_links = FALSE;/*affiche liens contextuels*/
 
 $emptyTextVue = $view->display_handler->get_option('empty');
 $emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">TEXTE VIDE A diapo_fiche.</div>');

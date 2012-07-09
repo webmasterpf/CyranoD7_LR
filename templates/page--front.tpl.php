@@ -4,8 +4,8 @@ include ($theme_path.'/includes/inc_header.php');
 ?>
 <!-- ______________________ LAYOUT HOMEPAGE _______________________ -->
  <!-- ______________________ CONTENU _______________________ -->
-    
-	<div id="mainPage">
+ 
+ <div id="mainPage">
 	    <!-- _____ CONTENT HEADER ____ -->  
             <?php if ($messages || $tabs || $action_links): ?>
           <div id="content-header">
@@ -25,9 +25,9 @@ include ($theme_path.'/includes/inc_header.php');
           </div> <!-- /#content-header -->
         <?php endif; ?>
 
-          <?php if (!empty($content_top_home)): ?>
+          <?php if (!empty($page['content_top_home'])): ?>
             <div id="content-top-home">
-              <?php print $content_top_home; ?>
+              <?php print print render($page['content_top_home']); ?>
             </div> <!-- /#content-top -->
           <?php endif; ?>
 

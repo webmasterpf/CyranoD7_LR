@@ -317,12 +317,12 @@ li.sfHover > a > .sf-sub-indicator {
   color: #606070;/*couleur des a *//*violet : #95107D vert :#AEC721 rose :#E1017B anthracite : #606070*/
 }
 .sf-navbar a:hover{
-    color: #E2007A;/*couleur des a:hover */
+    color: #95107D;/*couleur des a:hover */
     background: #D0D1D2; /*couleur ar plan au rollover sur un item*/
    
 }
 .sf-navbar a.active{
-     color: #E1017B; /*couleur du lien courant- tester sur FF3 IE8 SAFARI 4 OPERA 10*/
+     color: #95107D; /*couleur du lien courant- tester sur FF3 IE8 SAFARI 4 OPERA 10*/
      background: #D0D1D2; /*couleur ar plan au rollover sur un item*/
     
 }

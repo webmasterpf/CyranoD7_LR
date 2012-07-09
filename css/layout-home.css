@@ -84,7 +84,9 @@ background: url(../images/bg_recherche.gif) no-repeat left 5px;
 height: 25px;
 display: block;
 float: right;
+width: 250px;
 }
+.region-search-box{display: block;}
 #search{
   width: 225px;
   height: 25px;
@@ -116,8 +118,9 @@ color:white;
 display:block;
 float:left;
 height:20px;
-padding:3px 0 0 40px;
-width:400px;
+padding:7px 0 0 40px;
+width:690px;
+background: transparent;
 }
 
 #site-slogan a{
@@ -145,6 +148,7 @@ width: 50%;
 height: auto;
 padding:10px 0 0;
 float: left;
+height: 510px;
 
 }
 
@@ -190,6 +194,8 @@ list-style: none;
     background: url("../images/puce-home.gif") no-repeat left 3px;
     padding: 0;
     margin: 0;
+    display: block;
+    height: 20px;
 }
 
 .view-liste-activites-accueil .titre a{
@@ -222,7 +228,7 @@ BLOC POUR ACTU FOYER
 #block-views-liste_actu_foyer-block_1 li, #block-views-liste_actu_foyer-block_1 h3{
     color: #01AAD3;
 }
-
+#block-views-liste_actu_foyer-block_1 li{list-style-position: outside;}
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE----*/
 #transparency{
 background:none repeat scroll 0 0 #93117E;
