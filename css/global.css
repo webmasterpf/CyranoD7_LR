@@ -3,7 +3,7 @@
 *------------------------------------------------------*/
 
 /*------------------------------------------------*
- *---  Provence Formation Janv. 2010 --*
+ *---  Provence Formation Juillet 2012 --*
  *------------------------------------------------*/
 
 /**********STYLE POUR LES BLOCS*******************/
@@ -305,7 +305,7 @@ ____ COMMUN VDL STYLE _______*/
 .contentVDL a:hover{text-decoration: underline;}
 .contentVDL ul{}
 
-.vdl-galerie{}
+.vdl-galerie{margin: 5px auto;width: 650px;}
 /*Gallery Formatter*/
 .vdl-galerie .overlay-inner h3{color: #DFDFDF;}
 /*LB Like*/
