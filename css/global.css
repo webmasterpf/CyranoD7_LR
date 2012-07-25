@@ -312,6 +312,9 @@ ____ COMMUN VDL STYLE _______*/
 .vdl-galerie table{}
 .vdl-galerie tr{}
 .vdl-galerie td img{margin: 5px;border: 1px solid #93117E;}
+/* VIDEO VDL */
+.vdl-video,.vdl-service-tiers{width: 565px;margin: 5px auto;}
+
 /* FLUX BLOC ACTU ASSO*/
 #block-aggregator-feed-1 {
     margin: 5px 0;
